@@ -1,15 +1,20 @@
-set encoding=utf-8
-
-call plug#begin("~/.vim/plugs")
-  Plug 'vim-airline/vim-airline'		" add bottom line information
-  Plug 'vim-airline/vim-airline-themes'		" theme for bottom line information
-  Plug 'flazz/vim-colorschemes'			" colortheme for vim
-call plug#end()
-
-set relativenumber				" set number of curent line to 0
-
-" :colorscheme molokai				" set a colour theme
-:colorscheme busierbee
-
-"autoset airline theme				" setup airline theme
- let g:airline_theme='alduin'
+set number	
+set linebreak	
+set showbreak=+++	
+set textwidth=100	
+set showmatch	
+set spell	
+set visualbell	
+set hlsearch	
+set smartcase	
+set ignorecase	
+set incsearch	
+set autoindent	
+set expandtab	
+set shiftwidth=4	
+set smartindent	
+set smarttab	
+set softtabstop=4	
+set ruler	
+set undolevels=1000	
+set backspace=indent,eol,start	
