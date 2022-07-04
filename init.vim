@@ -38,7 +38,6 @@ call plug#end()
 " endif
 
 syntax enable
-color scheme evening
 colorscheme dracula
 " open new split panes to right and below
 set splitright
@@ -126,10 +125,9 @@ let g:coc_global_extensions = [
              \ 'coc-flutter',
              \ ]
 
-
 " Set TAB completion
 set signcolumn=yes
-inoremap <silent><expr> <TAB>
+inoremap <silent><expr><TAB>
    \ pumvisible() ? coc#_select_confirm() :
    \ coc#expandableOrJumpable() ?
    \ "\<C-r>=coc#rpc#request('doKeymap', ['snippets-expand-jump',''])\<CR>" :
