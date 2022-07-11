@@ -1,0 +1,6 @@
+
+MODES:
+    n - normal mode
+    i - input mode
+    v - visual mode
+
