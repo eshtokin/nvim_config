@@ -19,6 +19,7 @@ map('n', '<leader>G', '<cmd>GV<CR>', {})
 
 -- add quick exti
 map('n', '<leader>q', '<cmd>q<CR>', {})
+map('n', '<leader>Q', '<cmd>q!<CR>', {})
 -- LSP configurations
 local opts = { noremap=true, silent=true }
     -- See ':help vim.diagnostic.*' for dicumentation on any of the below commands
