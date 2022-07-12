@@ -13,6 +13,7 @@ require('plug')
 -- vim.b --> vim.api.nvim_buf_set_var - set variebles scoped to a given buffer
 
 -- PLUGINS
+require('impatient')
 require('nvim-tree').setup{}
 
 require('lualine').setup {

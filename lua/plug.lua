@@ -1,6 +1,8 @@
 
 return require('packer').startup({
 function(use)
+    -- Speed up start time for lua files
+    use 'lewis6991/impatient.nvim'
     -- Explorer
     use {
         'kyazdani42/nvim-tree.lua',
