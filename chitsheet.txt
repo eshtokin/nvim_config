@@ -1,3 +1,7 @@
+this script install Packer manager for nvim
+git clone --depth 1 https://github.com/wbthomason/packer.nvim\
+ ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+
 
 MODES:
     n - normal mode
