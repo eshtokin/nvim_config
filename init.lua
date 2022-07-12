@@ -86,7 +86,7 @@ require('floaterm').setup({
   -- Terminal buffer name
   name = 'fterm',
   -- Background color, default use the color from NormalFloat
-  bg_color = '#212123', -- as hex color string eg. #212121
+  bg_color = '#212121', -- as hex color string eg. #212121
   -- Border highlight group, default FloatBorder
   border_hl = nil,
   -- `on_exit` a optional function to call when the terminal's job
