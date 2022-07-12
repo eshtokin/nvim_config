@@ -19,5 +19,10 @@ map('n', '<leader>G', '<cmd>GV<CR>', {})
 
 -- add quick exti
 map('n', '<leader>q', '<cmd>q<CR>', {})
-
-
+-- LSP configurations
+local opts = { noremap=true, silent=true }
+    -- See ':help vim.diagnostic.*' for dicumentation on any of the below commands
+map('n', '<space>e', '<cmd>vim.diagnostic.open_float<CR>', opts)
+map('n', '[d', '<cmd>vim.diagnostic.goto_prev<CR>', opts)
+map('n', ']d', '<cmd>vim.diagnostic.goto_next<CR>', opts)
+map('n', '<space>q', '<cmd>vim.diagnostic.setloclist<CR>', opts)

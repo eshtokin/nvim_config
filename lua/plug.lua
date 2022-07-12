@@ -48,6 +48,9 @@ function(use)
     -- automatically close brackets
     use { 'windwp/nvim-autopairs' }
 
+    -- Language support protocol
+    use 'neovim/nvim-lspconfig'
+
 end,
 config = {
     package_root = vim.fn.stdpath('config') .. '/site/pack'}
