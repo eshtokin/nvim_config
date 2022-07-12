@@ -26,3 +26,7 @@ map('n', '<space>e', '<cmd>vim.diagnostic.open_float<CR>', opts)
 map('n', '[d', '<cmd>vim.diagnostic.goto_prev<CR>', opts)
 map('n', ']d', '<cmd>vim.diagnostic.goto_next<CR>', opts)
 map('n', '<space>q', '<cmd>vim.diagnostic.setloclist<CR>', opts)
+
+
+-- FLoatTerm key setup
+map('n', 'TT', [[<cmd>lua require'floaterm'.open({row=1})<cr>]], {})

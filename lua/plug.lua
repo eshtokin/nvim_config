@@ -51,6 +51,9 @@ function(use)
     -- Language support protocol
     use 'neovim/nvim-lspconfig'
 
+    -- Float terminal window
+    use 'doums/floaterm.nvim'
+
 end,
 config = {
     package_root = vim.fn.stdpath('config') .. '/site/pack'}
