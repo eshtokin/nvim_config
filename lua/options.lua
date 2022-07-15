@@ -32,3 +32,5 @@ opt.tabstop = 4			    -- Number of spaces tabs count for
 -- [[ Splits ]]
 opt.splitright = true		-- Place new window to right of current one
 opt.splitbelow = true		-- Place new window below the current one
+
+opt.cmdheight = 3
