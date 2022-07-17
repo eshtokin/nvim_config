@@ -38,3 +38,8 @@ keymap(Mode.normal, '<Leader>e', [[:Explore<CR>]], opt)
 keymap(Mode.insert, 'jk', '<esc>', opt) 
 
 
+-- PLUGIN Telescope
+keymap(Mode.normal, 'ff', '<cmd>Telescope find_files prompt_prefix=🔍<CR>', opt)
+keymap(Mode.normal, 'fg', '<cmd>Telescope live_grep<CR>', opt)
+keymap(Mode.normal, 'fb', '<cmd>Telescope buffers<CR>', opt)
+keymap(Mode.normal, 'fh', '<cmd>Telescope help_tags<CR>', opt)
