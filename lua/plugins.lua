@@ -14,7 +14,6 @@ packer.init {
 		},
 	}
 
-
 -- PLUGINS install
 
 return packer.startup(function(use)
@@ -36,6 +35,10 @@ return packer.startup(function(use)
 --	use "lunarvim/colorschemes"
 --	use "lunarvim/darkplus.nvim"
 --	use "lunarvim/onedarker.nvim"
+  use 'sainnhe/vim-color-forest-night'
+  use 'mhartington/oceanic-next'
+  use 'morhetz/gruvbox'
+  use 'sainnhe/gruvbox-material'
 
 
 	if PACKER_BOOTSTRAP then
