@@ -4,4 +4,4 @@ require'options'
 require'telescope'
 require'lsp'
 require'autocomplition'
-
+require'treesitter'
