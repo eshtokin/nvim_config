@@ -44,5 +44,5 @@ for k, v in pairs(options) do
   vim.opt[k] = v
 end
 
-vim.cmd 'colorscheme tokyonight' -- set colorscheme
+vim.cmd 'colorscheme desert' -- set colorscheme
 

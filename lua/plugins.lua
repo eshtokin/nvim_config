@@ -1,30 +1,7 @@
--- Automaticaly install packer
--- local install_path = vim.fn.stdpath "data" .. "site/pack/packer/start/packer.nvim"
--- if vim.fn.empty(vim.fn.glob(install_path)) > 0 then
---	PACKER_BOOTSTRAP = vim.fn.system {
---	"git",
---	"clone",
---	"--deps",
---	"1",
---	"https://github.com/wbthomason/packer.nvim",
---	install_path,
---	}
---	print "Installing packer close and reopen nvim"
---	vim.cmd [[packadd packer.nvim]]
---end
-
-
--- autoinstall on save plugins.lua
--- vim.cmd [[
---	augroup packer_user_config
---		autocmd!
---		autocmd! BufWritePost plugins.lua source <afile> | PackerSync
---	augroup end
--- ]]
-
 -- protected call for packer
 local status_ok, packer = pcall(require, 'packer')
 if not status_ok then
+  print 'error while load packer'
 	return
 end
 
@@ -49,12 +26,12 @@ return packer.startup(function(use)
     requires = { {'nvim-lua/plenary.nvim'} }
   }
 	-- lsp
-	
+  use 'neovim/nvim-lspconfig' -- Configurations for Nvim LSP
 	 -- Colorschemes
-	use "folke/tokyonight.nvim"
-	use "lunarvim/colorschemes"
-	use "lunarvim/darkplus.nvim"
-	use "lunarvim/onedarker.nvim"
+--  use "folke/tokyonight.nvim"
+--	use "lunarvim/colorschemes"
+--	use "lunarvim/darkplus.nvim"
+--	use "lunarvim/onedarker.nvim"
 
 
 	if PACKER_BOOTSTRAP then
