@@ -35,12 +35,11 @@ return packer.startup(function(use)
     'nvim-treesitter/nvim-treesitter',
     run = ':TSUpdate',
   }
-
+  -- terminal
+  use {"akinsho/toggleterm.nvim", tag = 'v2.*', config = function()
+    require("toggleterm").setup{}
+  end}
 	 -- Colorschemes
---  use "folke/tokyonight.nvim"
---	use "lunarvim/colorschemes"
---	use "lunarvim/darkplus.nvim"
---	use "lunarvim/onedarker.nvim"
   use 'sainnhe/vim-color-forest-night'
   use 'mhartington/oceanic-next'
   use 'morhetz/gruvbox'
