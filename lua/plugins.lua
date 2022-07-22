@@ -35,6 +35,11 @@ return packer.startup(function(use)
     'nvim-treesitter/nvim-treesitter',
     run = ':TSUpdate',
   }
+  -- GIT
+  use {
+    'lewis6991/gitsigns.nvim',
+--    tag = 'release' -- To use the latest release
+  }
   -- terminal
   use {"akinsho/toggleterm.nvim", tag = 'v2.*', config = function()
     require("toggleterm").setup{}
